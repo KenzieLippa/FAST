@@ -15,17 +15,19 @@ function  navbar() {
         <Router>
             <div className="Navbar">
                 <Navbar bg="dark" variant="dark" expand="lg">
-                    <Navbar.Brand margin-left="20px">
+                    <Navbar.Brand className = 'test'>
                         FAST
                     </Navbar.Brand>
                     
-                    <Nav>
-                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav >
+                        
+                        <Nav.Link as={Link} to="/" className = 'test'>Home</Nav.Link>
                         <Nav.Link as={Link} to="/Connect">Connect</Nav.Link>
                         <Nav.Link as={Link} to="/Challanges">Challanges</Nav.Link>
                         <Nav.Link as={Link} to="/About">About</Nav.Link>
-                        <Nav.Link as={Link} to="/Login">login</Nav.Link>
+                        <Nav.Link as={Link} to="/Login">Login</Nav.Link>
                         <Nav.Link as={Link} to="/Signup">Signup</Nav.Link>
+                       
                     </Nav>
 
                 </Navbar>

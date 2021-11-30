@@ -1,3 +1,10 @@
+
 .formContent {
-    text-align: center;
+    text-align: left;
+    margin-left: 2%;
+}
+.test{
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
 }

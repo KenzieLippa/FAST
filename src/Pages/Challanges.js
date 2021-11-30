@@ -4,10 +4,10 @@ function Challanges(){
 
     return(
         <div>
-            <h1> Our Challanges! </h1>
-            <h1> HEllo
+            <h1> Weekly Challanges! </h1>
+            <h2> Hello
                 
-            </h1>
+            </h2>
         </div>
     )
 }
