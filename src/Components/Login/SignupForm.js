@@ -12,7 +12,7 @@ const SignupForm = (submitForm) => {
             <form className="form" onSubmit={handleSubmit}>
                 <h1>
                     Hmmmm... seems you aren't logged in to view your profile. oh man, 
-                    have you even signed up y
+                    have you signed up yet?
                 </h1>
                 <div className="formInputs">
                     <label htmlFor="username" className="formLabel">UserName</label>
