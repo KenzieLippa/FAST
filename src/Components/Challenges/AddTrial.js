@@ -28,7 +28,7 @@ const AddTrial = ({onAdd}) => {
             </div>
             <div className = 'form-control'>
                 <label>Current Progress</label>
-                <input type = 'text' placeholer = 'Add Progress'
+                <input type = 'text' placeholder = 'Add Progress'
                 value = {progress}
                 onChange = {(e) => setProgress(e.target.value)}/>
 
