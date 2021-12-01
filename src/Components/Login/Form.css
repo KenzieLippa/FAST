@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+body{
+   font-family: 'Oswald', 'sans-serif'; 
+}
 .formContent {
     text-align: left;
     margin-left: 2%;
@@ -13,9 +16,12 @@
     align-items: center;
 }
 .challenges{
+    border-radius: 25px;
     text-align: center;
     border-width: 4;
-    border-style: solid;
+    border-style:solid ;
+    border-color: rgb(147, 168, 147);
+    box-shadow:12px 12px 10px -5px grey ;
     margin: auto;
     width: 50%;
     padding:10px;
@@ -57,4 +63,8 @@
     width: 0%;
     height: 30px;
     background-color: rgb(57, 173, 115);
+}
+.title{
+    padding-bottom: 2%;
+   
 }

@@ -7,7 +7,8 @@ const Challenges = ({trials, onDelete, onToggle}) =>{
                 <Challenge key = {trial.id} trial = {trial}
                 
                  onDelete = {onDelete}
-                 onToggle = {onToggle}/>
+                 onToggle = {onToggle}
+              />
                 
             ))}
             

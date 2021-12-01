@@ -57,11 +57,17 @@ function Challanges(){
             trials.map((trial) =>
             trial.id === id ? {...trial, finished: 
                 !trial.finished}:trial)
-        )
+                
+                
+                )
+        
+        
     }
+   
     return(
         <div className = 'challenge'>
-            <h1> Weekly Challanges! </h1>
+            <h1 className = 'title'> Weekly Challanges! </h1>
+           
             
             {trials.length >0 ? (<Challenges trials = {trials} 
             onDelete = {deleteTask}

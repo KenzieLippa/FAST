@@ -2,6 +2,7 @@ import {BiWalk} from "react-icons/bi"
 import {FaTimes} from 'react-icons/fa'
 import {useState} from 'react'
 import ProgressBar from "react-bootstrap/ProgressBar"
+
 const Challenge = ({trial, onDelete, onToggle}) => {
     const [finished, setFinished] = useState(false)
     return(
@@ -20,11 +21,16 @@ const Challenge = ({trial, onDelete, onToggle}) => {
                 value = {finished}
                 const onChange = {(e)=> {
                     setFinished(e.currentTarget.checked)
+                    
                     if(!finished){
-                        alert('are you sure you are finished? we did not log 100% of your task')
+                        alert("Are you sure you're finished? We did not log 100% of your task")
                         
                     }
-                }}/>
+                    if(!finished){
+                        trial.progress = '100'
+                    }
+                }}
+                />
             </div>
             <FaTimes
             style ={{color:'red', cursor: 'pointer'}}
@@ -33,7 +39,9 @@ const Challenge = ({trial, onDelete, onToggle}) => {
             <div id = "myProgress">
            <ProgressBar animated now ={trial.progress} />
            </div>
-            <p>`{trial.progress}%`</p>
+         
+             <p>{trial.progress}%</p>
+       
          </div>
     )
 }
