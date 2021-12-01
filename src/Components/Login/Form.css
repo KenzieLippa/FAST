@@ -5,13 +5,13 @@ body{
 .formContent {
 
     font-family: 'Times New Roman', Times, serif;
-    color: #57595D;
+    color: #262727;
     text-align: center;
     margin: 20px;
     background-color: black;
-
-    text-align: left;
     margin-left: 2%;
+    border: black solid 2px;
+    border-radius: 8px;
 }
 .test{
     margin-left: 2%;
@@ -40,7 +40,7 @@ body{
 }
 .btn{
     display: inline-block;
-    background: #000;
+    background: rgb(52, 136, 52);
     color: #fff;
     border:none;
     padding: 10px 20px;
@@ -51,8 +51,19 @@ body{
     font-size: 15px;
     font-family: inherit;
 }
+.btn-block{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+}
+.add-form{
+    margin-bottom: 40px;
+}
 .form-control{
     margin: 20px 0;
+    width:50%;
+    text-align: center;
+    margin-left: 25%;
 }
 .form-control-check{
     display: flex;
@@ -72,7 +83,11 @@ body{
     background-color: rgb(57, 173, 115);
 }
 .title{
-    padding-bottom: 2%;
+    padding: 1%;
+    
    
+}
+.Ffonts{
+    font-size: 40px;
 }
 

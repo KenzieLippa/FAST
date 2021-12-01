@@ -3,7 +3,10 @@ import {useState} from 'react'
 import Challenges from "../Components/Challenges/Challenges"
 import Button from "../Components/Challenges/Button"
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import AddTrial from '../Components/Challenges/AddTrial'
+import Header from '../Components/Challenges/Header'
 function Challanges(){
+    const [showAddTrial, setShowAddTrial] = useState(false)
     const [trials, setTrials] = useState([
         {
             id:1,
@@ -43,6 +46,11 @@ function Challanges(){
         }
     ])
 
+    const addTrial = (trial) =>{
+        const id = Math.floor(Math.random() * 1000) +1
+        const newTrial = {id, ...trial}
+        setTrials([...trials, newTrial])
+    }
     
     const onClick = () =>{
         //console.log('was clicked')
@@ -67,16 +75,16 @@ function Challanges(){
     return(
         <div className = 'challenge'>
             <h1 className = 'title'> Weekly Challanges! </h1>
-           
-            
+           <Header onAdd = {() => setShowAddTrial(!showAddTrial)} showAdd = {showAddTrial}/>
+            {showAddTrial && <AddTrial onAdd = {addTrial}/>}
             {trials.length >0 ? (<Challenges trials = {trials} 
             onDelete = {deleteTask}
             onToggle = {toggleFinished}
             />):('Nothing here!')}
            
+           
         </div>
     )
 }
-//<Button color = 'Purple' text = 'Check Progress' onClick = {onClick}/>
 
 export default Challanges;

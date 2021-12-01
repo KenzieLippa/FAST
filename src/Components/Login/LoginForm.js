@@ -8,9 +8,10 @@ const LoginForm = () => {
     const { handleChange, values, handleSubmit, errors } = useForm(validate);
     return (
         <div className="formContent" style={{ backgroundImage: `url(${running})`}}>
+         
             <form className="form" onSubmit={handleSubmit}>
                 <h1>
-                    Welcome Back!! omg we missed you
+                    Welcome Back!!
                 </h1>
                 <div className="formInputs">
                     <label htmlFor="username" className="formLabel">UserName</label>
@@ -36,7 +37,7 @@ const LoginForm = () => {
                 </div>
                 <button className="FormButton" type="submit">Log In</button>
             </form>
-        </div>
+            </div>
     )
 }
 
