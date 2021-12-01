@@ -46,3 +46,15 @@
     align-items: center;
     justify-content: space-between;
 }
+#myProgress{
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 1%;
+    width: 50%;
+    background-color: rgb(190, 178, 178);
+}
+.myBar{
+    width: 0%;
+    height: 30px;
+    background-color: rgb(57, 173, 115);
+}
