@@ -9,7 +9,7 @@ const AddTrial = ({onAdd}) => {
         e.preventDefault()
 
         if(!text){
-            alert('Please add a task')
+            alert('Please add a challenge')
             return
         }
         onAdd({text, progress, finished})
@@ -21,13 +21,13 @@ const AddTrial = ({onAdd}) => {
     return(
         <form className = 'add-form' onSubmit={onSubmit}>
             <div className = 'form-control'>
-                <label>Challenge Name</label>
+                <label>Challenge Name </label>
                 <input type = 'text' placeholder = 'Add Challenge'
                 value = {text}
                 onChange = {(e)=>setText(e.target.value)}/>
             </div>
             <div className = 'form-control'>
-                <label>Current Progress</label>
+                <label>Current Progress % </label>
                 <input type = 'text' placeholder = 'Add Progress'
                 value = {progress}
                 onChange = {(e) => setProgress(e.target.value)}/>
